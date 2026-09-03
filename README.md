@@ -205,11 +205,3 @@ winnipeg_rental_market_intelligence/
 **Visualization:** Matplotlib · Seaborn · SVG · Dashboard Design
 
 **Data Sources:** CMHC · Statistics Canada
-
-## Author
-
-**Statistics Honours Student · University of Manitoba**
-
-Interested in data analytics, statistical analysis, and evidence-based decision-making.
-
-This project demonstrates an end-to-end workflow from raw public data through statistical analysis, reproducible documentation, SQL, visualization, and business interpretation.
