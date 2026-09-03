@@ -36,7 +36,7 @@ The analytical dataset contains **187 Winnipeg census tracts**.
 
 ## Research Question
 
-> How do rental prices, vacancy rates, housing supply, and neighbourhood characteristics vary across Winnipeg, and what factors are associated with rental-market pressure and affordability?
+How do rental prices, vacancy rates, housing supply, and neighbourhood characteristics vary across Winnipeg, and what factors are associated with rental-market pressure and affordability?
 
 The analysis is observational and cross-sectional. Statistical relationships are interpreted as associations rather than causal effects.
 
