@@ -65,10 +65,6 @@ The dashboard is organized into six analytical views:
 5. Rent Model & Statistical Evidence
 6. Manitoba Benchmarking
 
-Dashboard visuals are stored as SVG files in:
-
-`data/processed/dashboard/`
-
 ### Dashboard Views
 
 | View | Focus |
