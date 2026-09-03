@@ -196,8 +196,6 @@ winnipeg_rental_market_intelligence/
 ├── README.md
 └── requirements.txt
 ```
-
-
 ## Technical Skills
 
 **Python:** pandas · NumPy · SciPy · statsmodels · Matplotlib
