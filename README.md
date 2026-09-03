@@ -194,21 +194,21 @@ winnipeg_rental_market_intelligence/
 ```
 ## Technical Skills
 
-Python: pandas · NumPy · SciPy · statsmodels · Matplotlib
+**Python:** pandas · NumPy · SciPy · statsmodels · Matplotlib
 
-SQL: SQLite · Analytical Queries · Database Views
+**SQL:** SQLite · Analytical Queries · Database Views
 
-Statistics: Descriptive Statistics · Pearson Correlation · Spearman Correlation · OLS Regression · Model Diagnostics · Sensitivity Analysis
+**Statistics:** Descriptive Statistics · Pearson Correlation · Spearman Correlation · OLS Regression · Model Diagnostics · Sensitivity Analysis
 
-Data Engineering: Data Cleaning · Data Integration · Missing-Value Handling · Geographic Data Preparation
+**Data Engineering:** Data Cleaning · Data Integration · Missing-Value Handling · Geographic Data Preparation
 
-Visualization: Matplotlib · Seaborn · SVG · Dashboard Design
+**Visualization:** Matplotlib · Seaborn · SVG · Dashboard Design
 
-Data Sources: CMHC · Statistics Canada
+**Data Sources:** CMHC · Statistics Canada
 
-Author
+## Author
 
-Statistics Honours Student · University of Manitoba
+**Statistics Honours Student · University of Manitoba**
 
 Interested in data analytics, statistical analysis, and evidence-based decision-making.
 
