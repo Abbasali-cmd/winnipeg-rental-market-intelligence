@@ -27,16 +27,19 @@ The analytical dataset contains **187 Winnipeg census tracts**.
 - Median observed vacancy rate: **0.7%**
 - Median rental supply: **223 units per census tract**
 - Approximately **91%** of observed rental units are one- or two-bedroom units
-- Rent and median household income: **Spearman ρ = 0.498**
-- Rental supply and the affordability indicator: **Spearman ρ = 0.639**
-- Rent-to-income indicator and income: **Spearman ρ = -0.506**
+- Rent and median household income: **Spearman rho = 0.498**
+
+- Rental supply and the affordability indicator: **Spearman rho = 0.639**
+- Rent-to-income indicator and income: **Spearman rho = -0.506**
 - Rental-price model: **R² = 0.678**
 - Rental-price model prediction error: **MAE ≈ $138/month**
-- Selected Manitoba rural/small-centre median rent: **$848/month**
+- Selected Manitoba rural/small-centre median rent: **$848**
+
+The affordability measure is an **annualized market rent-to-median-household-income indicator**, not a household-level rent-burden measure.
 
 ## Research Question
 
-How do rental prices, vacancy rates, housing supply, and neighbourhood characteristics vary across Winnipeg, and what factors are associated with rental-market pressure and affordability?
+> How do rental prices, vacancy rates, housing supply, and neighbourhood characteristics vary across Winnipeg, and what factors are associated with rental-market pressure and affordability?
 
 The analysis is observational and cross-sectional. Statistical relationships are interpreted as associations rather than causal effects.
 
@@ -65,16 +68,9 @@ The dashboard is organized into six analytical views:
 5. Rent Model & Statistical Evidence
 6. Manitoba Benchmarking
 
-### Dashboard Views
+Dashboard visuals are stored as SVG files in:
 
-| View | Focus |
-|---|---|
-| Market Overview | Winnipeg rental-market KPIs |
-| Rental Supply & Composition | Unit supply and bedroom composition |
-| Rental Prices & Affordability | Rent levels and income relationships |
-| Vacancy & Market Pressure | Vacancy and market-pressure indicators |
-| Rent Model & Statistical Evidence | Regression results and diagnostics |
-| Manitoba Benchmarking | Winnipeg versus selected rural/small-centre markets |
+`data/processed/dashboard/`
 
 ### SQL
 
@@ -192,24 +188,21 @@ winnipeg_rental_market_intelligence/
 ├── README.md
 └── requirements.txt
 ```
-## Technical Skills
 
-**Python:** pandas · NumPy · SciPy · statsmodels · Matplotlib
+## Tools
 
-**SQL:** SQLite · Analytical Queries · Database Views
+**Python** · pandas · NumPy · SciPy · statsmodels · Matplotlib
 
-**Statistics:** Descriptive Statistics · Pearson Correlation · Spearman Correlation · OLS Regression · Model Diagnostics · Sensitivity Analysis
+**SQL** · SQLite
 
-**Data Engineering:** Data Cleaning · Data Integration · Missing-Value Handling · Geographic Data Preparation
+**Statistics** · Correlation · OLS · Diagnostics · Sensitivity Analysis
 
-**Visualization:** Matplotlib · Seaborn · SVG · Dashboard Design
+**Visualization** · SVG · Dashboard Design
 
-**Data Sources:** CMHC · Statistics Canada
+**Data Sources** · CMHC · Statistics Canada
 
 ## Author
 
-**Statistics Honours Student · University of Manitoba**
-
-Interested in data analytics, statistical analysis, and evidence-based decision-making.
+Statistics Honours student at the University of Manitoba with an interest in data analytics, statistical analysis, and evidence-based decision-making.
 
 This project demonstrates an end-to-end workflow from raw public data through statistical analysis, reproducible documentation, SQL, visualization, and business interpretation.
