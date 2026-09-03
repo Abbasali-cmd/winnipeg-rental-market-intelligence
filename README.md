@@ -24,16 +24,15 @@ The analytical dataset contains **187 Winnipeg census tracts**.
 ### Key Findings
 
 - Median observed total average rent: **$1,124/month**
-- Median observed vacancy: **0.7%**
-- Median rental supply: **223 units/tract**
+- Median observed vacancy rate: **0.7%**
+- Median rental supply: **223 units per census tract**
 - Approximately **91%** of observed rental units are one- or two-bedroom units
-- Rent and median household income: **Spearman rho = 0.498**
-- Rent-to-income indicator and income: **Spearman rho = -0.506**
+- Rent and median household income: **Spearman ρ = 0.498**
+- Rental supply and the affordability indicator: **Spearman ρ = 0.639**
+- Rent-to-income indicator and income: **Spearman ρ = -0.506**
 - Rental-price model: **R² = 0.678**
-- Rental-price model prediction error: **MAE ≈ $138**
-- Selected Manitoba rural/small-centre median rent: **$848**
-
-The affordability measure is an **annualized market rent-to-median-household-income indicator**, not a household-level rent-burden measure.
+- Rental-price model prediction error: **MAE ≈ $138/month**
+- Selected Manitoba rural/small-centre median rent: **$848/month**
 
 ## Research Question
 
@@ -69,6 +68,17 @@ The dashboard is organized into six analytical views:
 Dashboard visuals are stored as SVG files in:
 
 `data/processed/dashboard/`
+
+### Dashboard Views
+
+| View | Focus |
+|---|---|
+| Market Overview | Winnipeg rental-market KPIs |
+| Rental Supply & Composition | Unit supply and bedroom composition |
+| Rental Prices & Affordability | Rent levels and income relationships |
+| Vacancy & Market Pressure | Vacancy and market-pressure indicators |
+| Rent Model & Statistical Evidence | Regression results and diagnostics |
+| Manitoba Benchmarking | Winnipeg versus selected rural/small-centre markets |
 
 ### SQL
 
@@ -185,22 +195,3 @@ winnipeg_rental_market_intelligence/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-```
-
-## Tools
-
-**Python** · pandas · NumPy · SciPy · statsmodels · Matplotlib
-
-**SQL** · SQLite
-
-**Statistics** · Correlation · OLS · Diagnostics · Sensitivity Analysis
-
-**Visualization** · SVG · Dashboard Design
-
-**Data Sources** · CMHC · Statistics Canada
-
-## Author
-
-Statistics Honours student at the University of Manitoba with an interest in data analytics, statistical analysis, and evidence-based decision-making.
-
-This project demonstrates an end-to-end workflow from raw public data through statistical analysis, reproducible documentation, SQL, visualization, and business interpretation.
