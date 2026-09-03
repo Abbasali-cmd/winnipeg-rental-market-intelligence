@@ -5,5 +5,3 @@ scipy
 statsmodels
 openpyxl
 jupyter
-jupyterlab
-jupytext

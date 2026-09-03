@@ -15,6 +15,7 @@
 
 # %%
 from pathlib import Path
+from IPython.display import display
 import os
 
 print("Current working directory:")
@@ -1037,17 +1038,16 @@ for f in matches:
 import shutil
 from pathlib import Path
 
-source_file = Path(
-    "/home/jupyter/R/x86_64-pc-linux-gnu-library/"
-    "Untitled Folder/98100058.csv"
-)
-
 destination_file = Path(
-    "/Users/abbas90/winnipeg_rental_market_intelligence/"
     "data/raw/statcan/98100058.csv"
 )
 
-shutil.copy2(source_file, destination_file)
+print("StatCan CSV already exists:")
+print(destination_file)
+print(
+    "Size:",
+    f"{destination_file.stat().st_size / 1_000_000:.1f} MB"
+)
 
 print("Copied successfully:")
 print(destination_file)
@@ -1274,7 +1274,7 @@ for p in matches:
 
 # %%
 metadata_file = Path(
-    "/home/jupyter/R/x86_64-pc-linux-gnu-library/Untitled Folder/98100058_MetaData.csv"
+    "data/raw/statcan/98100058_MetaData.csv"
 )
 
 metadata = pd.read_csv(metadata_file)
@@ -1367,7 +1367,7 @@ statcan_dir = project_dir / "data" / "raw" / "statcan"
 
 statcan_file = statcan_dir / "98100058.csv"
 metadata_file = Path(
-    "/home/jupyter/R/x86_64-pc-linux-gnu-library/Untitled Folder/98100058_MetaData.csv"
+    "data/raw/statcan/98100058_MetaData.csv"
 )
 
 # Load the metadata
@@ -4946,23 +4946,7 @@ for file_name in [
     )
 
 # %%
-┌─────────────────────────────────────────────────────────────┐
-│ WINNIPEG RENTAL MARKET INTELLIGENCE                         │
-│ Census-tract analysis of rent, supply, vacancy & income     │
-├────────────┬────────────┬────────────┬──────────────────────┤
-│ 187        │ $1,124     │ 0.7%       │ $84,000              │
-│ CTs        │ Median Rent│ Median Vac.│ Median HH Income     │
-├────────────┴────────────┴────────────┴──────────────────────┤
-│                                                             │
-│ Rental Supply Concentration                                 │
-│ [Horizontal bar chart — Top 15 CTs]                         │
-│                                                             │
-├───────────────────────────────────┬─────────────────────────┤
-│ Rent Distribution                 │ Key Findings            │
-│ [Histogram]                       │ • ...                   │
-│                                   │ • ...                   │
-│                                   │ • ...                   │
-└───────────────────────────────────┴─────────────────────────┘
+
 
 # %%
 # Page 1 — dashboard data preparation
@@ -7592,8 +7576,7 @@ for f in rural_files:
 from pathlib import Path
 
 search_roots = [
-    Path("/mnt/data"),
-    Path("/home/jupyter"),
+    cmhc_dir,
 ]
 
 matches = []
@@ -7616,7 +7599,7 @@ from pathlib import Path
 import pandas as pd
 
 units_path = Path(
-    "/home/jupyter/rental-market-survey-number-units-universe-bedroom-type-census-subdivision-2025-en.xlsx"
+    "data/raw/cmhc/rental-market-survey-number-units-universe-bedroom-type-census-subdivision-2025-en.xlsx"
 )
 
 print("Exists:", units_path.exists())
@@ -7708,7 +7691,7 @@ print(
 
 # %%
 rural_rent_csd = pd.read_excel(
-    "/home/jupyter/rural-rental-market-survey-data-average-rent-census-subdivision-2025-en.xlsx",
+    "data/raw/cmhc/rural-rental-market-survey-data-average-rent-census-subdivision-2025-en.xlsx",
     sheet_name="Avg Rent_CSD",
     header=3
 )
@@ -7786,7 +7769,7 @@ print(
 
 # %%
 rural_vacancy_csd = pd.read_excel(
-    "/home/jupyter/rural-rental-market-survey-data-vacancy-rate-census-subdivision-2025-en.xlsx",
+    "data/raw/cmhc/rural-rental-market-survey-data-vacancy-rate-census-subdivision-2025-en.xlsx",
     sheet_name="Vacancy Rate_CSD",
     header=3
 )
@@ -7956,7 +7939,7 @@ import pandas as pd
 
 # Units
 rural_units_csd = pd.read_excel(
-    "/home/jupyter/rental-market-survey-number-units-universe-bedroom-type-census-subdivision-2025-en.xlsx",
+    "data/raw/cmhc/rental-market-survey-number-units-universe-bedroom-type-census-subdivision-2025-en.xlsx",
     sheet_name="Universe_CSD",
     header=3
 )
@@ -7974,7 +7957,7 @@ rural_units_apartment = rural_units_csd[
 
 # Rent
 rural_rent_csd = pd.read_excel(
-    "/home/jupyter/rural-rental-market-survey-data-average-rent-census-subdivision-2025-en.xlsx",
+    "data/raw/cmhc/rural-rental-market-survey-data-average-rent-census-subdivision-2025-en.xlsx",
     sheet_name="Avg Rent_CSD",
     header=3
 )
@@ -8006,7 +7989,7 @@ for col in ["rent_studio", "rent_1br", "rent_2br",
 
 # Vacancy
 rural_vacancy_csd = pd.read_excel(
-    "/home/jupyter/rural-rental-market-survey-data-vacancy-rate-census-subdivision-2025-en.xlsx",
+    "data/raw/cmhc/rural-rental-market-survey-data-vacancy-rate-census-subdivision-2025-en.xlsx",
     sheet_name="Vacancy Rate_CSD",
     header=3
 )

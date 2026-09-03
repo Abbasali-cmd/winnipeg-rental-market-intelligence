@@ -1,0 +1,5 @@
+affordability_tier,census_tracts,avg_monthly_rent,avg_median_income,avg_rent_income_pct
+Lower relative burden,20,963.55,81915.0,14.19
+Moderate relative burden,18,1178.94,79266.67,17.89
+Higher relative burden,20,1308.85,75275.0,20.92
+Highest relative burden,19,1273.16,57447.37,26.96
